@@ -3,12 +3,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComment, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "./UI.jsx";
 
-let BACKEND = "https://cbot-rfcl.onrender.com/chat";
+let BACKEND = "https://movie-project-56fz.onrender.com/chat";
 BACKEND = "http://127.0.0.1:8000/chat";
 
 export default function Chatbot() {
   const [open, setOpen] = useState(false);
-  const [messages, setMessages] = useState([{ role: "bot", text: "안녕하세요! 영화에 대해 무엇이든 물어보세요" }]);
+  const [messages, setMessages] = useState([{ role: "bot", text: "안녕안녕~ 영화에 대해 물어보세요~~😊😁" }]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const bottomRef = useRef(null);
